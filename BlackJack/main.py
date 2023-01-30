@@ -39,7 +39,7 @@ try:
                 you = addCards(you)
                 print(f"You = {you}\n")
             ask = (input("Hit(""enter"") or Stand(0)"))
-        while AI < 21:
+        while AI < 16:
             AI = addCards(AI)
 
         print(f"AI = {AI}\n")
