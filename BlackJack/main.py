@@ -55,6 +55,9 @@ try:
         elif AI == 21 and you != 21:
             print("You lost...")
             continue
+            
+        if you == AI:
+            print("Tie!")
 
         if you > AI:
             if you < 21:
