@@ -1,3 +1,5 @@
+
+
 discount = 1
 DaysPassed = 1
 SpotUsed = []
@@ -153,11 +155,11 @@ try:
             amountPayed = float(input("How much will you pay: "))
             while amountPayed < price:
                 amountPayed = int(input("That amount is less than the price, enter again: "))
+            dailyTotal += int(amountPayed)
             endDay = str(input("Payed. Next day?: "))
             if endDay == "" or endDay == "yes":
                 sameDay = False
                 print("\n")
-                dailyTotal += int(amountPayed)
                 print(f"Amount of money we got today: {dailyTotal}$")
                 dailyTotal = 0
                 DaysPassed += 1
