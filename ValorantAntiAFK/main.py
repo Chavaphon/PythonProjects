@@ -4,11 +4,10 @@ from random import randint
 keylist = {
     1 : "a",
     2 : "d",
-
 }
 warning = 0
 timeAFKed = 0
-warningLimit = 3
+warningLimit = 50
 AFKing = False
 
 def move():
