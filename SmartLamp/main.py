@@ -4,11 +4,6 @@ led26 = PWMLED(26)
 led16 = PWMLED(16)
 led6 = PWMLED(6)
 led5 = PWMLED(5)
-WordToPercent = {
-    "thirty": 30,
-    "fifty": 50,
-    "seventy": 70,
-}
 
 recogniser = speech_recognition.Recognizer()
 
@@ -33,12 +28,12 @@ while True:
                 led6.value = 0
                 led5.value = 0
             else:
-                for ele in WordToPercent:
-                    if f"lamp {ele} percent" in message:
-                        led26.value = WordToPercent[ele]
-                        led16.value = WordToPercent[ele]
-                        led6.value = WordToPercent[ele]
-                        led5.value = WordToPercent[ele]
+                for i in range(100):
+                    if f"lamp {i}%" in message:
+                        led26.value = i / 100
+                        led16.value = i / 100
+                        led6.value = i / 100
+                        led5.value = i / 100
         except speech_recognition.exceptions.UnknownValueError:
             recogniser = speech_recognition.Recognizer()
             continue
