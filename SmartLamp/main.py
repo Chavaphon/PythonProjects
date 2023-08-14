@@ -24,7 +24,7 @@ recogniser = speech_recognition.Recognizer()
 try:
     requests.get("https://www.google.com", timeout=5)
 
-    on()
+    on(100)
     sleep(1)
     off()
 
