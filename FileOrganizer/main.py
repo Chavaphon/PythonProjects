@@ -2,13 +2,13 @@ import os
 from os.path import splitext, exists, join
 from shutil import move
 
-SourceDir = "C:\\Users\\Username\\Downloads"
-DestDirAudio = "C:\\Users\\Username\\Files\\Audios"
-DestDirVideo = "C:\\Users\\Username\\Files\\Videos"
-DestDirImage = "C:\\Users\\Username\\Files\\Images"
-DestDirDocuments = "C:\\Users\\Username\\Files\\Documents"
-DestDirZip = "C:\\Users\\Username\\Files\\Zips"
-DestDirExe = "C:\\Users\\Username\\Files\\Exes"
+SourceDir = "Your Downloads directory"
+DestDirAudio = "Your Audios directory"
+DestDirVideo = "Your Videos directory"
+DestDirImage = "Your Images directory"
+DestDirDocuments = "Your Documents directory"
+DestDirZip = "Your Zip directory"
+DestDirExe = "Your Exe directory"
 
 ImageExtensions = [".jpg", ".jpeg", ".jpe", ".jif", ".jfif", ".jfi", ".png", ".gif", ".webp", ".tiff", ".tif", ".psd",
                     ".raw", ".arw", ".cr2", ".nrw", ".k25", ".bmp", ".dib", ".heif", ".heic", ".ind", ".indd", ".indt",
