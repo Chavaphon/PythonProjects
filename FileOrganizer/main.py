@@ -2,6 +2,10 @@ import os
 from os.path import splitext, exists, join
 from shutil import move
 
+"""
+Do not forget to create each directory for each respective file type!
+"""
+
 SourceDir = "Your Downloads directory"
 DestDirAudio = "Your Audios directory"
 DestDirVideo = "Your Videos directory"
