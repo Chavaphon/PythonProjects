@@ -8,63 +8,35 @@ dailyTotal = 0
 sameDay = False
 MaxStayHour = {
     "sunday"    : 8,
-    "Sunday"    : 8,
     "sun"    : 8,
-    "Sun"    : 8,
     "monday"    : 2,
-    "Monday"    : 2,
     "mon"    : 2,
-    "Mon"    : 2,
     "tuesday"    : 2,
-    "Tuesday"    : 2,
     "tue"    : 2,
-    "Tue"    : 2,
     "wednesday"    : 2,
-    "Wednesday"    : 2,
     "wed"    : 2,
-    "Wed"    : 2,
-    "thursday"    : 2,
     "thursday"    : 2,
     "thu"    : 2,
-    "Thu"    : 2,
     "friday"    : 2,
-    "Friday"    : 2,
     "fri"    : 2,
-    "Fri"    : 2,
     "saturday"  : 4,
-    "Saturday"  : 4,
     "sat"  : 4,
-    "Sat"  : 4
 }
 PricePerHour = {
     "sunday"    : 2,
-    "Sunday"    : 2,
     "sun"    : 2,
-    "Sun"    : 2,
     "monday"    : 10,
-    "Monday"    : 10,
     "mon"    : 10,
-    "Mon"    : 10,
     "tuesday"    : 10,
-    "Tuesday"    : 10,
     "tue"    : 10,
-    "Tue"    : 10,
     "wednesday"    : 10,
-    "Wednesday"    : 10,
     "wed"    : 10,
-    "Wed"    : 10,
-    "thursday"    : 10,
     "thursday"    : 10,
     "thu"    : 10,
-    "Thu"    : 10,
     "friday"    : 10,
-    "Friday"    : 10,
     "fri"    : 10,
-    "Fri"    : 10,
     "saturday"  : 3,
-    "Saturday"  : 3,
     "sat"  : 3,
-    "Sat"  : 3
 }
 try:
     while 1:
@@ -79,7 +51,7 @@ try:
             day = input(f"Day: ")
             today = day
 
-        if day in MaxStayHour:
+        if day.lower() in MaxStayHour:
             try:
                 time = float(input(f"Time of arrival: "))
                 while time > 24 or time < 8:
